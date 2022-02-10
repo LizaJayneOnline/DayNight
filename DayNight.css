@@ -1,0 +1,79 @@
+:root {
+    --blue: #6fd6ff9d;
+    --white: #ffffff;
+    --black: rgb(19, 21, 37);
+    --day: url(Day.jpg); 
+    --night: url(Night.jpg);
+  }
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
+  body {
+      background: var(--bg);
+  }
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+  }
+  
+.list {
+    list-style: square;
+  }
+
+.btn {
+    position: relative;
+    top: 20px;
+    left: 520px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+
+.btn:focus { outline-style: none; }
+
+.btn:hover {
+  border: 6px solid gold;
+}
+
+#daynnightimg {
+  height: 650px;
+  width: 880px;
+  background-image: var(--bgImg);
+  position: relative;
+  left: 180px;
+}
+
+#audioplayer{
+  position: relative;
+  left: 450px;
+}
+  
+.light-theme {
+    --bg: var(--blue);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+    --bgImg: var(--day);
+  }
+  
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--blue);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+    --bgImg: var(--night);
+  }
+
+  #result {
+    position: relative;
+    left: 500px;
+  }
